@@ -11,9 +11,13 @@
 		DC256DA82B0E0A74003546C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC256DA72B0E0A74003546C8 /* SceneDelegate.swift */; };
 		DC256DAA2B0E0A74003546C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC256DA92B0E0A74003546C8 /* ViewController.swift */; };
 		DC256DAD2B0E0A74003546C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC256DAB2B0E0A74003546C8 /* Main.storyboard */; };
-		DC256DB02B0E0A74003546C8 /* harrier_assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC256DAE2B0E0A74003546C8 /* harrier_assignment.xcdatamodeld */; };
 		DC256DB22B0E0A75003546C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC256DB12B0E0A75003546C8 /* Assets.xcassets */; };
 		DC256DB52B0E0A75003546C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC256DB32B0E0A75003546C8 /* LaunchScreen.storyboard */; };
+		DC256DBE2B0E1447003546C8 /* Inventory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC256DBC2B0E1447003546C8 /* Inventory.xcdatamodeld */; };
+		DC256DC02B0E17F0003546C8 /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC256DBF2B0E17F0003546C8 /* PersistentContainer.swift */; };
+		DC256DC22B0E1B8B003546C8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC256DC12B0E1B8B003546C8 /* DataManager.swift */; };
+		DC256DC52B0E1E30003546C8 /* InventoryItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC256DC32B0E1E30003546C8 /* InventoryItem+CoreDataClass.swift */; };
+		DC256DC62B0E1E30003546C8 /* InventoryItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC256DC42B0E1E30003546C8 /* InventoryItem+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +26,14 @@
 		DC256DA72B0E0A74003546C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DC256DA92B0E0A74003546C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC256DAC2B0E0A74003546C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DC256DAF2B0E0A74003546C8 /* harrier_assignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = harrier_assignment.xcdatamodel; sourceTree = "<group>"; };
 		DC256DB12B0E0A75003546C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC256DB42B0E0A75003546C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC256DB62B0E0A75003546C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC256DBD2B0E1447003546C8 /* Inventory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Inventory.xcdatamodel; sourceTree = "<group>"; };
+		DC256DBF2B0E17F0003546C8 /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
+		DC256DC12B0E1B8B003546C8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		DC256DC32B0E1E30003546C8 /* InventoryItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InventoryItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DC256DC42B0E1E30003546C8 /* InventoryItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InventoryItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +50,8 @@
 		DC256D992B0E0A74003546C8 = {
 			isa = PBXGroup;
 			children = (
+				DC256DC32B0E1E30003546C8 /* InventoryItem+CoreDataClass.swift */,
+				DC256DC42B0E1E30003546C8 /* InventoryItem+CoreDataProperties.swift */,
 				DC256DA42B0E0A74003546C8 /* harrier_assignment */,
 				DC256DA32B0E0A74003546C8 /* Products */,
 			);
@@ -59,13 +69,15 @@
 			isa = PBXGroup;
 			children = (
 				DC256DA52B0E0A74003546C8 /* AppDelegate.swift */,
+				DC256DBF2B0E17F0003546C8 /* PersistentContainer.swift */,
+				DC256DC12B0E1B8B003546C8 /* DataManager.swift */,
 				DC256DA72B0E0A74003546C8 /* SceneDelegate.swift */,
 				DC256DA92B0E0A74003546C8 /* ViewController.swift */,
 				DC256DAB2B0E0A74003546C8 /* Main.storyboard */,
 				DC256DB12B0E0A75003546C8 /* Assets.xcassets */,
 				DC256DB32B0E0A75003546C8 /* LaunchScreen.storyboard */,
 				DC256DB62B0E0A75003546C8 /* Info.plist */,
-				DC256DAE2B0E0A74003546C8 /* harrier_assignment.xcdatamodeld */,
+				DC256DBC2B0E1447003546C8 /* Inventory.xcdatamodeld */,
 			);
 			path = harrier_assignment;
 			sourceTree = "<group>";
@@ -141,10 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC256DB02B0E0A74003546C8 /* harrier_assignment.xcdatamodeld in Sources */,
 				DC256DAA2B0E0A74003546C8 /* ViewController.swift in Sources */,
+				DC256DC02B0E17F0003546C8 /* PersistentContainer.swift in Sources */,
+				DC256DC22B0E1B8B003546C8 /* DataManager.swift in Sources */,
+				DC256DBE2B0E1447003546C8 /* Inventory.xcdatamodeld in Sources */,
 				DC256DA62B0E0A74003546C8 /* AppDelegate.swift in Sources */,
 				DC256DA82B0E0A74003546C8 /* SceneDelegate.swift in Sources */,
+				DC256DC62B0E1E30003546C8 /* InventoryItem+CoreDataProperties.swift in Sources */,
+				DC256DC52B0E1E30003546C8 /* InventoryItem+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,13 +385,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		DC256DAE2B0E0A74003546C8 /* harrier_assignment.xcdatamodeld */ = {
+		DC256DBC2B0E1447003546C8 /* Inventory.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				DC256DAF2B0E0A74003546C8 /* harrier_assignment.xcdatamodel */,
+				DC256DBD2B0E1447003546C8 /* Inventory.xcdatamodel */,
 			);
-			currentVersion = DC256DAF2B0E0A74003546C8 /* harrier_assignment.xcdatamodel */;
-			path = harrier_assignment.xcdatamodeld;
+			currentVersion = DC256DBD2B0E1447003546C8 /* Inventory.xcdatamodel */;
+			path = Inventory.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
